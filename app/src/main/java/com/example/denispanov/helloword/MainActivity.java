@@ -14,5 +14,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         AppCenter.start(getApplication(), "d39b72f9-d06c-46aa-b604-7fb8478a0a00", Analytics.class, Crashes.class);
+
+        throw new IllegalStateException("Test crash");
     }
 }
