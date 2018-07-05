@@ -30,6 +30,6 @@ public class MainActivity extends AppCompatActivity {
         Analytics.trackEvent("Test data event", data);
 
         Crashes.generateTestCrash();
-        throw new IllegalStateException("Test crash");
+        //throw new IllegalStateException("Test crash");
     }
 }
